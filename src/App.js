@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import axios from 'axios';
 import './App.css';
 
-const API_BASE = process.env.REACT_APP_API_URL || 'https://8000-idoyux3z0t3dnod2pcc8g-0cb9cea2.manusvm.computer';
+const API_BASE = 'https://8000-idoyux3z0t3dnod2pcc8g-0cb9cea2.manusvm.computer';
 
 const App = () => {
   const [signal, setSignal] = useState(null);
