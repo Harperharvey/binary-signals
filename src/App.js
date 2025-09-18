@@ -31,7 +31,7 @@ const App = () => {
 
   // Initialize WebSocket
   useEffect(() => {
-    socketRef.current = io(API_BASE.replace('/api', ''), {
+    socketRef.current = io(API_BASE, {
       transports: ['websocket', 'polling'],
       timeout: 20000,
       reconnection: true,
